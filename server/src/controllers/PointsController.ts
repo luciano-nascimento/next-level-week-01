@@ -19,7 +19,7 @@ class PointsController {
     async show(request:Request, response: Response)
     {
         const { id } = request.params;
-        const point = await knex('points').where('id', id);
+        const point = await knex('points').where('id', id).first();
         if(!point) {
             return response.status(400).json({message: 'Point not found.'});
         }
@@ -64,7 +64,7 @@ class PointsController {
             const pointItems = items.map((item_id: number) => {
                 return {
                     item_id,
-                    point_id: insertedIds[0],
+                    point_id
                 }
             })
         
