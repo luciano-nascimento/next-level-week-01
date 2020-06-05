@@ -1,0 +1,20 @@
+server/node_modules
+server/uploads/*.*
+web/node_modules
+*.sqlite
+
+mobile/node_modules
+.expo/*
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+web-report/
+
+# macOS
+.DS_Store
+
