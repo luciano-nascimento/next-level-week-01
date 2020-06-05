@@ -1,4 +1,4 @@
 server/node_modules
-server/uploads/*
+server/uploads/*.*
 web/node_modules
 *.sqlite
